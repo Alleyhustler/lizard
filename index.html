@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: 'Underdog', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        header {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+        }
+        header h1 {
+            color: white;
+            font-size: 40px;
+            margin: 0;
+        }
+        header img {
+            width: 20px;
+            margin-left: 8px;
+            filter: invert(1); /* Inverts the color from black to white */
+            transition: filter 0.3s ease; /* Smooth transition on hover */
+        }
+
+        header img:hover {
+            filter: invert(0); /* Reverts the color back to original on hover */
+        }
+        
+        .banner {
+            width: 100%;
+            height: 750px;
+            background-image: url('tys.gif'); /* Replace with your GIF path */
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s; /* Smooth transition */
+        }
+        .gif-image {
+            width: 100%;
+            height: 100px;
+            background-image: url('scrol.gif'); /* Replace with your GIF path */
+            background-size: cover;
+            background-position: center;
+        }
+        .inline-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 20px 0;
+            color: white;
+        }
+        .inline-content img {
+            width: 800px;
+            margin-right: 40px;
+            border: 5px solid #2a2a29; /* Subtle border */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+        .inline-content img:hover {
+            transform: scale(1.05); /* Zoom-in effect on hover */
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+        }
+        .inline-content div {
+            max-width: 500px; /* Adjust width as needed */
+        }
+        .inline-content p {
+            font-size: 36px;
+            margin: 90px 0;
+        }
+        .inline-content p:first-of-type {
+            margin-bottom: 150px; /* Adds space between the two paragraphs */
+        }
+
+        /* Fade-in animation */
+        .inline-content img {
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards; /* Smooth fade-in effect */
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lizard People</h1>
+        <div>
+            <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter" /></a>
+            <a href="https://telegram.org" target="_blank"><img src="telegram.png" alt="Telegram" /></a>
+            <a href="https://pumpfun.com" target="_blank"><img src="pumpfun.webp" alt="PumpFun" /></a>
+        </div>
+    </header>
+    <div class="banner" id="banner"></div>
+    
+    <!-- GIF image section -->
+    <div class="gif-image"></div>
+    
+    <!-- Inline image and text section -->
+    <div class="inline-content">
+        <img src="ds.png" alt="Your Image" /> <!-- Replace with your image path -->
+        <div>
+            <p><strong>Reptilians</strong>, we are controlled by lizard people. They have the world in hand, control everything from politics to sport. In order to escape, you have to buy and burn these people. <strong>$lizard</strong></p>
+            <p><strong>Tokenomics</strong>:<br>
+            - Dev 5%<br>
+            - Team 5%<br>
+            - Burn once stabilized on Raydium<br>
+            - Revolutionary</p>
+        </div>
+    </div>
+    
+    <main>
+        <h2>Welcome to Your Website!</h2>
+        <p>Here’s where you can add your content.</p>
+    </main>
+    <script>
+        // Change to a static image after 3 seconds
+        setTimeout(function() {
+            document.getElementById('banner').style.backgroundImage = "url('ty.jpg')"; // Replace with your static image path
+        }, 3000);
+    </script>
+</body>
+</html>
